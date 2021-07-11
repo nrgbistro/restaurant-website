@@ -1,7 +1,7 @@
-import "./init.js";
+import init from "./init";
+import css from "../stylesheets/index.css"
 
+window.init = init;
+window.css = css;
 
-console.log("createc");
-
-
-// TODO: https://stackoverflow.com/questions/41298736/how-to-access-a-function-in-a-webpack-bundle-from-a-html-script
+init.createDefaultPage();
