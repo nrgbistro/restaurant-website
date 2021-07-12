@@ -1,6 +1,9 @@
+
+
 function createDefaultPage() {
 	const container = document.querySelector("div#content");
 	container.appendChild(navBar());
+
 	console.log("finished creating page");
 }
 
@@ -19,11 +22,28 @@ function navBar() {
 }
 
 function createTab(name) {
-	const newTab = document.createElement("h1");
+	const newTab = document.createElement("div");
 	newTab.classList.add("tab");
 	newTab.id = name;
 	newTab.textContent = name;
+	newTab.addEventListener("click", () => {
+		console.log(name);
+	});
 	return newTab;
+}
+
+document.head = document.head || document.getElementsByTagName('head')[0];
+
+function changeFavicon(src) {
+	let link = document.createElement('link'),
+		oldLink = document.getElementById('dynamic-favicon');
+	link.id = 'dynamic-favicon';
+	link.rel = 'shortcut icon';
+	link.href = src;
+	if (oldLink) {
+		document.head.removeChild(oldLink);
+	}
+	document.head.appendChild(link);
 }
 
 module.exports = {

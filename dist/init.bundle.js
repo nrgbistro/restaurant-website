@@ -16,7 +16,7 @@ var myLibrary;
   \*****************************/
 /***/ ((module) => {
 
-eval("function createDefaultPage() {\n\tconst container = document.querySelector(\"div#content\");\n\tcontainer.appendChild(navBar());\n\tconsole.log(\"finished creating page\");\n}\n\n\nfunction navBar() {\n\tconst navBar = document.createElement(\"div\");\n\tnavBar.id = \"navBar\";\n\n\tconst tabList = [\"Home\", \"Menu\", \"Contact\"];\n\n\tfor (let i = 0; i < tabList.length; i++) {\n\t\tnavBar.appendChild(createTab(tabList[i]));\n\t}\n\tconsole.log(\"created nav bar\");\n\treturn navBar;\n}\n\nfunction createTab(name) {\n\tconst newTab = document.createElement(\"h1\");\n\tnewTab.classList.add(\"tab\");\n\tnewTab.id = name;\n\tnewTab.textContent = name;\n\treturn newTab;\n}\n\nmodule.exports = {\n\tcreateDefaultPage,\n};\n\n//# sourceURL=webpack://myLibrary/./src/scripts/init.js?");
+eval("function createDefaultPage() {\n\tconst container = document.querySelector(\"div#content\");\n\tcontainer.appendChild(navBar());\n\n\tconsole.log(\"finished creating page\");\n}\n\n\nfunction navBar() {\n\tconst navBar = document.createElement(\"div\");\n\tnavBar.id = \"navBar\";\n\n\tconst tabList = [\"Home\", \"Menu\", \"Contact\"];\n\n\tfor (let i = 0; i < tabList.length; i++) {\n\t\tnavBar.appendChild(createTab(tabList[i]));\n\t}\n\tconsole.log(\"created nav bar\");\n\treturn navBar;\n}\n\nfunction createTab(name) {\n\tconst newTab = document.createElement(\"div\");\n\tnewTab.classList.add(\"tab\");\n\tnewTab.id = name;\n\tnewTab.textContent = name;\n\tnewTab.addEventListener(\"click\", () => {\n\t\tconsole.log(name);\n\t});\n\treturn newTab;\n}\n\nmodule.exports = {\n\tcreateDefaultPage,\n};\n\n//# sourceURL=webpack://myLibrary/./src/scripts/init.js?");
 
 /***/ })
 

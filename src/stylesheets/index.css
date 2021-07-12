@@ -1,3 +1,8 @@
+:root {
+	--navBar-item-border: 3px black solid;
+}
+
+
 html, body {
 	margin: 0;
 	width: 100%;
@@ -9,8 +14,29 @@ a {
 
 #navBar {
 	width: 100%;
-	height: 10vh;
+	height: 80px;
 	background-color: green;
 	display: flex;
 	flex-direction: row;
+	padding-left: 5em;
+}
+
+#navBar div {
+	color: white;
+	border-right: var(--navBar-item-border);
+	border-bottom: var(--navBar-item-border);
+	box-sizing: border-box;
+	background-color: red;
+	font-size: 32px;
+	padding: 20px 15px;
+	font-family: sans-serif;
+}
+
+#navBar div:first-child {
+	/* // Added one px to navBar border because it looked better  // */
+	border-left: 4px black solid;
+}
+
+#navBar div:hover {
+	background-color: deeppink;
 }

@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	mode: "development",
+	devtool: 'inline-source-map',
+	devServer: {
+		contentBase: './dist',
+	},
 	entry: {
 		index: "./src/scripts/index.js",
 		init: "./src/scripts/init.js",
@@ -23,6 +27,10 @@ module.exports = {
 			{
 				test: /\.css$/i,
 				use: ["style-loader", "css-loader"],
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource',
 			},
 		],
 	},
