@@ -7,7 +7,7 @@ module.exports = {
 		index: "./src/scripts/index.js",
 	},
 	output: {
-		path: path.resolve(__dirname, "doc"),
+		path: path.resolve(__dirname, "docs"),
 		filename: "[name].bundle.js",
 		library: "myLibrary",
 		clean: true,
