@@ -19,6 +19,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: "Restaurant",
+			favicon: "./src/images/favicon.ico",
 			template: "./src/index.html",
 		}),
 	],
