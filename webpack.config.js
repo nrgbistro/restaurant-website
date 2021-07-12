@@ -18,7 +18,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Pond5",
+			title: "Pond5 | Home",
 			favicon: "./src/images/favicon.ico",
 			template: "./src/index.html",
 		}),

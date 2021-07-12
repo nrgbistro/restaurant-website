@@ -42,6 +42,9 @@ a {
 	font-size: 32px;
 	padding: 28px 15px;
 	font-family: sans-serif;
+	font-weight: bold;
+	width: 200px;
+	text-align: center;
 }
 
 #navBar div:nth-child(2) {
@@ -51,4 +54,10 @@ a {
 
 #navBar div:hover {
 	background-color: rgba(0,0,0,0.8);
+}
+
+
+#body {
+	height: 100%;
+	padding-top: 100px;
 }
