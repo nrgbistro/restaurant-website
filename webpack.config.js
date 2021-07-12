@@ -9,16 +9,16 @@ module.exports = {
 	},
 	entry: {
 		index: "./src/scripts/index.js",
-		init: "./src/scripts/init.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "[name].bundle.js",
 		library: "myLibrary",
+		clean: true,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Restaurant",
+			title: "Pond5",
 			favicon: "./src/images/favicon.ico",
 			template: "./src/index.html",
 		}),

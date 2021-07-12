@@ -1,42 +1,54 @@
 :root {
-	--navBar-item-border: 3px black solid;
+	--navBar-item-border: 3px rgba(255,255,255,0.75) solid;
 }
 
 
 html, body {
 	margin: 0;
 	width: 100%;
+	height: 100vh;
 }
 
 a {
 	color: red;
 }
 
+#content {
+	height: 100%;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
 #navBar {
+	box-sizing: border-box;
+	position: absolute;
 	width: 100%;
-	height: 80px;
-	background-color: green;
+	height: 100px;
+	background-color: rgba(0,0,0,0.4);
 	display: flex;
 	flex-direction: row;
-	padding-left: 5em;
+}
+
+#navBar #navBarLogo {
+	margin: 8px 8px 8px 20px;
 }
 
 #navBar div {
 	color: white;
+	cursor: pointer;
 	border-right: var(--navBar-item-border);
 	border-bottom: var(--navBar-item-border);
 	box-sizing: border-box;
-	background-color: red;
 	font-size: 32px;
-	padding: 20px 15px;
+	padding: 28px 15px;
 	font-family: sans-serif;
 }
 
-#navBar div:first-child {
-	/* // Added one px to navBar border because it looked better  // */
-	border-left: 4px black solid;
+#navBar div:nth-child(2) {
+	border-left: var(--navBar-item-border);
+	margin-left: 20px;
 }
 
 #navBar div:hover {
-	background-color: deeppink;
+	background-color: rgba(0,0,0,0.8);
 }
