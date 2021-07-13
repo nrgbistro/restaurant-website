@@ -61,5 +61,31 @@ a {color : red;}
 	width            : 75%;
 	background-color : rgba(0, 0, 0, 0.75);
 	margin           : auto;
+	display          : flex;
+	padding          : 50px 0;
+	border-radius    : 5px;
 }
 
+#bodySubcontainerLeft {
+	margin    : 50px;
+	flex-grow : 3;
+}
+
+#bodySubcontainerLeft p {
+	font-size : 32px;
+	color     : white;
+}
+
+#bodySubcontainerRight {
+	display        : flex;
+	flex-direction : column;
+	width          : 100%;
+	flex-grow      : 1;
+	padding        : 0 5em;
+}
+
+#bodySubcontainerRight img {
+	margin        : 25px auto;
+	border-radius : 25%;
+	border        : 5px rgba(255, 255, 255, 0.2) solid;
+}

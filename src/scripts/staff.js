@@ -1,7 +1,7 @@
 import {createDiv} from "./common";
 import randyImage from "../images/Randy.png";
 
-export function homePage() {
+export function staffPage() {
 	const body = document.createElement("div");
 	body.id = "body";
 

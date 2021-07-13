@@ -1,7 +1,7 @@
 import "../stylesheets/index.css";
 import backgroundImage from "../images/background-image.png";
 import logo256 from "../images/logo-256.png";
-import {homePage} from "./home.js";
+import {staffPage} from "./staff.js";
 import {createDiv, createTab} from "./common";
 
 function createDefaultPage() {
@@ -11,7 +11,7 @@ function createDefaultPage() {
 
 	const bodyContainer = document.createElement("div");
 	bodyContainer.id = "bodyContainer";
-	bodyContainer.appendChild(homePage());
+	bodyContainer.appendChild(staffPage());
 	container.appendChild(bodyContainer);
 
 
