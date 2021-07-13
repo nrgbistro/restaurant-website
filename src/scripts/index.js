@@ -1,19 +1,18 @@
 import "../stylesheets/index.css";
 import backgroundImage from "../images/background-image.png";
 import logo256 from "../images/logo-256.png";
-import {createHomePage} from "./home.js";
+import {homePage} from "./home.js";
 
 function createDefaultPage() {
 	const container = document.querySelector("div#content");
-	// Add the image to our existing div.
 	container.style.backgroundImage = `url(${backgroundImage}`;
 	container.appendChild(navBar());
 
-	const body = document.createElement("div");
-	body.id = "body";
-	container.appendChild(body);
+	const bodyContainer = document.createElement("div");
+	bodyContainer.id = "bodyContainer";
+	bodyContainer.appendChild(homePage());
+	container.appendChild(bodyContainer);
 
-	createHomePage();
 
 	console.log("finished creating page");
 }
