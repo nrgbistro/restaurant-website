@@ -21,10 +21,10 @@ a {
 
 #navBar {
 	box-sizing: border-box;
-	position: absolute;
+	/*position: absolute;*/
 	width: 100%;
 	height: 100px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.75);
 	display: flex;
 	flex-direction: row;
 }
@@ -53,11 +53,19 @@ a {
 }
 
 #navBar div:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.85);
+	font-size: 33px;
 }
 
+
+#bodyContainer {
+	padding-top: 40px;
+}
 
 #body {
-	height: 100%;
-	padding-top: 100px;
+	min-height: 300px;
+	width: 75%;
+	background-color: rgba(0,0,0,0.75);
+	margin: auto;
 }
+
