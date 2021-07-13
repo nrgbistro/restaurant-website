@@ -1,72 +1,71 @@
 :root {
-	--navBar-item-border: 3px rgba(255,255,255,0.75) solid;
+	--navBar-item-border : 3px rgba(255, 255, 255, 0.75) solid;
 }
 
 
 html, body {
-	margin: 0;
-	width: 100%;
-	height: 100vh;
+	margin : 0;
+	width  : 100%;
+	height : 100vh;
 }
 
 a {
-	color: red;
+	color : red;
 }
 
 
 #content {
-	height: 100%;
-	background-size: cover;
-	box-sizing: border-box;
+	height          : 100%;
+	background-size : cover;
+	box-sizing      : border-box;
 }
 
 #navBar {
-	box-sizing: border-box;
-	/*position: absolute;*/
-	width: 100%;
-	height: 100px;
-	background-color: rgba(0,0,0,0.75);
-	display: flex;
-	flex-direction: row;
+	box-sizing       : border-box;
+	width            : 100%;
+	height           : 100px;
+	background-color : rgba(0, 0, 0, 0.75);
+	display          : flex;
+	flex-direction   : row;
 }
 
 #navBar #navBarLogo {
-	margin: 8px 8px 8px 20px;
+	margin : 8px 8px 8px 20px;
 }
 
 #navBar div {
-	color: white;
-	cursor: pointer;
-	border-right: var(--navBar-item-border);
-	border-bottom: var(--navBar-item-border);
-	box-sizing: border-box;
-	font-size: 32px;
-	padding: 28px 15px;
-	font-family: sans-serif;
-	font-weight: bold;
-	width: 200px;
-	text-align: center;
+	color         : white;
+	cursor        : pointer;
+	border-right  : var(--navBar-item-border);
+	border-bottom : var(--navBar-item-border);
+	box-sizing    : border-box;
+	font-size     : 32px;
+	padding       : 28px 15px;
+	font-family   : sans-serif;
+	font-weight   : bold;
+	width         : 200px;
+	text-align    : center;
 }
 
 #navBar div:nth-child(2) {
-	border-left: var(--navBar-item-border);
-	margin-left: 20px;
+	border-left : var(--navBar-item-border);
+	margin-left : 20px;
 }
 
 #navBar div:hover {
-	background-color: rgba(0,0,0,0.85);
-	font-size: 33px;
+	background-color : rgba(0, 0, 0, 0.85);
+	font-size        : 33px;
 }
 
 
 #bodyContainer {
-	padding-top: 40px;
+	padding-top : 40px;
 }
 
 #body {
-	min-height: 300px;
-	width: 75%;
-	background-color: rgba(0,0,0,0.75);
-	margin: auto;
+	min-height       : 300px;
+	width            : 75%;
+	background-color : rgba(0, 0, 0, 0.75);
+	margin           : auto;
 }
 
