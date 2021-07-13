@@ -9,9 +9,7 @@ html, body {
 	height : 100vh;
 }
 
-a {
-	color : red;
-}
+a {color : red;}
 
 
 #content {
@@ -29,9 +27,7 @@ a {
 	flex-direction   : row;
 }
 
-#navBar #navBarLogo {
-	margin : 8px 8px 8px 20px;
-}
+#navBar #navBarLogo {margin : 8px 8px 8px 20px;}
 
 #navBar div {
 	color         : white;
@@ -58,9 +54,7 @@ a {
 }
 
 
-#bodyContainer {
-	padding-top : 40px;
-}
+#bodyContainer {padding-top : 40px;}
 
 #body {
 	min-height       : 300px;
