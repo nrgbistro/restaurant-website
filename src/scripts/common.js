@@ -10,7 +10,7 @@ export function createTab(name) {
 
 export function createDiv(ID, CLASS) {
 	const newDiv = document.createElement("div");
-	if (!CLASS) {
+	if (!(CLASS === undefined)) {
 		newDiv.classList.add(CLASS);
 	}
 	newDiv.id = ID;
