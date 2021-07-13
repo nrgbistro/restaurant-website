@@ -13,9 +13,6 @@ a {
 	color: red;
 }
 
-img {
-	margin: 0;
-}
 
 #content {
 	height: 100%;
@@ -49,7 +46,6 @@ img {
 	font-weight: bold;
 	width: 200px;
 	text-align: center;
-	transition: 0.2s;
 }
 
 #navBar div:nth-child(2) {
@@ -59,7 +55,7 @@ img {
 
 #navBar div:hover {
 	background-color: rgba(0,0,0,0.85);
-	font-size: 35px;
+	font-size: 33px;
 }
 
 
@@ -68,33 +64,9 @@ img {
 }
 
 #body {
+	min-height: 300px;
 	width: 75%;
 	background-color: rgba(0,0,0,0.75);
 	margin: auto;
-	display: flex;
 }
 
-#bodySubcontainerLeft {
-	max-width: 800px;
-}
-
-#bodySubcontainerLeft p {
-	font-size: 32px;
-	color: white;
-	margin: 50px;
-	line-height: 40px;
-}
-
-#bodySubcontainerRight {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-#bodySubcontainerRight img {
-	border: 5px rgba(250, 250, 250, 0.2) solid;
-	border-radius: 30%;
-	margin: 20px auto;
-	max-width: 400px;
-	max-height: 400px;
-}
